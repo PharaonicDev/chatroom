@@ -1,0 +1,1028 @@
+
+body {
+   font-family: Arial;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+h6 {
+    overflow: hidden;
+    text-align: center;
+        padding-left: 55px;
+    padding-right: 64px;
+    color: #9B9B9B
+}
+h6:before,
+h6:after {
+    background-color: #9B9B9B;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+h6:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+h6:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+ .or{
+         padding-left: 16px;
+    padding-right: 27px;
+    }
+.big-container{
+        width: 95%;
+    min-width: 360px;
+    box-shadow: 5px 10px 18px 15px #D7D7D7;
+    -webkit-box-shadow: 5px 10px 18px 15px #D7D7D7;
+    -moz-box-shadow: 5px 10px 18px 15px #D7D7D7;
+    height: 92vh;
+    min-height: 300px;
+        margin: 0 auto;
+    margin-top: 30px
+}
+#main{
+  margin-top: -10px;
+}
+.sidenav {
+   
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #4285F4;
+    
+   overflow: hidden;
+    padding-top: 60px;
+        
+    top: 20px;
+        box-shadow: 5px 10px 18px 0px #FFFFFF;
+    -webkit-box-shadow: 5px 10px 18px 0px #FFFFFF;
+        margin-left: 54px;
+}
+
+.sidenav .user {
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  height: 100px;
+}
+
+.sidenav a:hover {
+   
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -10px;
+    left: 267px;
+    font-size: 36px;
+    padding: 10px;
+   font-family: Arial;
+   color: #fff;
+       text-decoration: none;
+     
+}
+.sidenav .user{
+    border-top: 1px solid #4D8CF4;
+     padding-top: 35px
+}
+.sidenav .user .chip .name{
+font-weight:bold;
+ color: #F1F6FE;
+  
+  font-size: 16px;
+letter-spacing: 0px;
+line-height: 24px;
+color: #ffffff;
+font-family: "Arial";
+}
+.sidenav .user .price{
+    color: #F1F6FE;
+    margin-left: 24px;
+     padding: 11px;
+         padding-top: 2px;
+     }
+
+     .chip .dropbtn {
+       background-color: #fff;
+           font-family: Arial;
+   font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+/* The container <div> - needed to position the dropdown content */
+.chip .dropdown {
+    position: relative;
+    display: block;
+
+    padding: 3px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.chip .dropdown-content {
+    display: none;
+    position: absolute;
+      background-color: #000;
+    min-width: 157px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+        border-radius: 15px;
+            top: 31px;
+    left: 18px;
+}
+
+/* Links inside the dropdown */
+.chip .dropdown-content a {
+   
+    padding: 0px 16px;
+    text-decoration: none;
+    display: block;
+
+    font-size: 13px;
+letter-spacing: 0px;
+line-height: 24px;
+color: #ffffff;
+font-family:Arial;
+}
+
+
+
+/* Show the dropdown menu on hover */
+.chip .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.chip .dropdown:hover .dropbtn {
+  
+}
+.chip p a{
+       margin-left: 3px;
+    font-size: 13px;
+    letter-spacing: 0px;
+   
+    color: #808080;
+    font-family: Arial;
+    text-decoration: none;
+}
+.chip p a:first-of-type{
+margin: 0;
+    position: fixed;
+}
+
+
+/*------------------------SearchBar*/
+.SearchBar .search-container .dropbtn {
+    
+    color: white;
+     font-family: Arial;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.SearchBar .search-container .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.SearchBar .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.SearchBar .search-container .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.SearchBar .search-container .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.SearchBar .search-container .dropdown a:hover {background-color: #ddd;}
+
+.SearchBar .search-container  .show {
+    display: block;
+   right: 13px;
+}
+/*-----------------------------------------------*/
+/*Avatar--------------------------------*/
+.chip {
+    display: inline-block;
+  padding: 0 0px 0 20px;
+    font-size: 16px;
+    border-radius: 25px;
+      margin: 20px 10px 20px 0px;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+ 
+    border-radius: 50%;
+}
+.chip div img
+{
+    width: 15px;
+    height: 15px;
+    float: none;
+           margin: 2px;
+}
+.chip p ,.users p{
+    font-size: 14px;
+    margin: 5px;
+    padding: 0;
+     
+}
+.users{
+    float:right;
+        padding: 0;
+      margin: 20px 0px 0px 0px;
+    font-size: 14px;
+}
+.users img {
+  padding-left: 8px;   
+}
+
+/*--------------------------------*/
+
+/*SearchBar-------------------------------*/
+.SearchBar {
+  overflow: hidden;
+  background-color: #3367D6;
+}
+
+
+.SearchBar .search-container {
+  float: left;
+}
+
+.SearchBar input[type=text] {
+      padding: 6px;
+    margin-top: 12px;
+    font-size: 17px;
+    border: none;
+   
+    background: #3367D6;
+}
+
+.SearchBar input[type=text]::placeholder {
+    color: #95B6F2;
+    text-align: center;
+    opacity: 1; /* Firefox */
+}
+
+.SearchBar input[type=text]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #95B6F2;
+    text-align: center;
+}
+
+.SearchBar input[type=text]::-ms-input-placeholder { /* Microsoft Edge */
+   color: #95B6F2;
+    text-align: center;
+}
+
+.SearchBar .search-container button {
+  float: left;
+ 
+  margin-top: 15px;
+
+  background:#3367D6;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  color: #fff
+}
+
+.SearchBar .search-container button:hover {
+ /* background: #ccc;*/
+}
+
+/*--------------------SearchBarDropDown*/
+.avatar {
+    background: #3367D6;
+}
+ .avatar .inner {
+        padding: 12px 0 12px 0;
+ }
+ .avatar .inner .search {
+    display: contents;
+    color: #fff;
+    padding: 2px;
+ }
+ .avatar .inner .search .search_icon
+ {
+     padding: 7px;
+    margin-left: 10px;
+ }
+.avatar form .dropbtn {
+ 
+    cursor: pointer;
+}
+ .avatar .inner  input{
+     padding: 8px; 
+     background: #3367D6;
+   border:none;
+}
+.avatar .inner .comment {
+    display: contents;
+    color: #fff;
+    padding: 2px;
+}
+.avatar .inner  input::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+
+.avatar .inner  input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:  #fff;
+}
+
+.avatar .inner  input::-ms-input-placeholder { /* Microsoft Edge */
+   color:  #fff;
+}
+.avatar .inner .comment span {
+    margin-left: 6px;padding: 7px;
+}
+.avatar .dropbtn{
+     margin-left: 6px;padding: 7px
+}
+.avatar .dropbtn:hover, .dropbtn:focus {
+   
+}
+
+.avatar .inner .dropdown {
+    float: right;
+    position: relative;
+   
+    display: contents;
+   color: #fff;
+   padding: 2px;
+}
+
+.avatar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+  
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+      left: 164px;
+    border-radius: 10px;
+   
+}
+.avatar .triangle-up {
+     width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 17px solid #ffffff;
+    position: absolute;
+    top: -17px;
+    left: 111px;
+    z-index: 0;
+}
+.avatar .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+        height: 12px;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.avatar .dropdown a:hover {background-color: #ddd;}
+
+.avatar .show {display: block;}
+/*--------------------------------------*/
+
+@media screen and (max-width: 600px) {
+  .SearchBar .search-container {
+    float: none;
+  }
+  .SearchBar a, .SearchBar input[type=text], .SearchBar .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .SearchBar input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+/*----------------------------------------*/
+/*Tabs----------------------------*/
+/* Style the tab */
+.tab {
+    background-color: #f1f1f1;
+        height: 52px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 16px 24px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    border-bottom: 2px solid #7AACFF;
+    color:  #7AACFF
+}
+
+
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+   background-color: #ffffff;
+    border-top: none;
+}
+/*------------------------------------------*/
+/*rooms------------------------------*/
+.rooms{
+    width:100%;
+    display: -webkit-box;
+    padding-top:3px;
+     padding-bottom: 3px;
+     margin: 5px;
+}
+.rooms .txt-1 , .text-2{
+ width: 33%
+}
+.rooms.flag{
+    width: 33%
+}
+.rooms p{
+ margin-left: 15px;
+ color: #7AACFF;
+ font-weight: bold;
+}
+
+
+/*--->messsage-body
+*/
+#main #icon {
+   font-size:30px;
+   cursor:pointer;
+   position: absolute;
+   z-index: 9;
+   background: rgb(66, 133, 244);
+    color: #eee;
+    width: 58px;
+    height: 50px;
+    border-bottom-right-radius: 29%;
+    text-align: -webkit-center; 
+}
+
+/*------------*/
+/*message-body-navbar------------------->
+*/
+.topnav {
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 3px solid;
+    border-color: #EBEBEB;
+    padding-top: 16px;
+}
+.topnav-left{
+    float: left;
+   
+     box-sizing: border-box;
+}
+.topnav-left p {
+    margin-left: 15px;    color: #000;
+    font-weight: bold;
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  color: #050505;
+ 
+}
+.topnav-right-icon a{
+border-right: 1px solid #ccc;
+}
+.topnav-right-icon .dropdown a{
+    border:none;
+}
+
+
+
+.topnav a.active {
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+   box-sizing: border-box;
+}
+.topnav-right .dropbtn {
+    background-color: #fff;
+    color: white;
+   
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav-right .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.topnav-right .dropdown-content {
+    display: none;
+    position: fixed;
+    right: 60px;
+    background-color: #f9f9f9;
+   
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 170px;
+}
+
+.topnav-right .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.topnav-right .dropdown-content a:hover {background-color: #f1f1f1;}
+
+.topnav-right .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media (min-width: 400px) {
+.topnav-right {
+   
+    position: relative;
+ }
+
+ .topnav-left{
+   position: absolute;
+ }
+
+} 
+@media (max-width: 400px) {
+.topnav-right {
+       float: left;
+    padding-left: 50px;
+    
+ }
+ 
+ .topnav-left{
+     display: none;
+ }
+
+} 
+@media (max-width: 600px) {
+
+.topnav-right a {
+    padding: 0px;
+    border:none;
+}
+
+ .topnav-left a{
+    padding: 0;
+    text-align: center;
+    font-size: 10px;
+    margin-left: 13px;
+        font-size: 8px;
+ }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+ .topnav-right a{
+    padding: 14px
+ }
+ 
+ .topnav-left a{
+        font-size: 16px;
+    
+ }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media  (min-width: 768px) {
+
+ .topnav-left{
+ width: 50%;
+ }
+} 
+
+
+
+
+/*--------------------------------*/
+
+@media screen  (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+
+  .chat-message .container{
+    padding: 10px
+  }
+ .chat-message .container img {
+        max-width: 68px;
+  }
+  .scrollmenu-left a, .scrollmenu-right a {
+    text-decoration: none;
+    color: #aaa;
+    font-weight: bold;
+    padding: 1px 1px;
+ }
+}
+/*chat-message-----------------------------------------*/
+.messsage-body{
+    margin-left: 50px
+}
+.chat-message {
+   padding-left:16px 
+}
+.chat-message .container  {
+   
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.chat-message .darker p{
+    padding: 7px;
+    border-bottom-right-radius: 50px;
+    background-color: #CDEAFC;
+}
+
+.chat-message .container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.chat-message .container img {
+    float: left;
+    max-width: 60px;
+   height: 60px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.chat-message .container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+    border: 4px solid #fff;
+}
+
+.chat-message .time-right {
+    
+    color: #aaa;
+}
+
+.chat-message .time-left {
+    float: right;
+    color: #999;
+}
+/*-----------------------------------*/
+.scrollmenu
+{
+   padding-bottom: 26px;
+    height: 20px;
+    padding-left: 13px;
+    padding-right: 39px;
+
+}
+
+.scrollmenu-left {
+float: left;
+}
+
+.scrollmenu-right {
+  float: right;
+}
+.scrollmenu-right a i {
+  font-size: 25px
+}
+.scrollmenu-left a,.scrollmenu-right a
+{
+  text-decoration: none;
+      color: #aaa;
+    font-weight: bold;
+    padding: 5px 5px;
+}
+
+
+.message-input form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+     border: none;
+    float: left;
+    min-width: 85%;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.message-input form.example button {
+    float: left;
+    min-width: 10%;
+    padding: 10px;
+    background: #000;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.message-input form.example button:hover {
+    background: #0b7dda;
+}
+
+.message-input form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*------------------------------------->login form
+*/
+#mydiv {
+    position: absolute;
+    z-index: 9;
+       right: 570px;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    top: 100px;
+        top: 20px;
+    height: 717px;
+}
+
+#mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+        background: #fff;
+    color: #888888;
+    
+   
+}
+.loginForm .container label {
+position: absolute;
+        font-size: 21px;
+    margin-top: 18px;
+    color: #757575;
+    padding-left: 6px;
+}
+.loginForm .container .fb{
+    background-color: #3B5998;
+  color: white;
+      padding: 10px;
+    text-decoration: none;
+    margin-right:20px
+}
+.loginForm .container .google {
+    background-color: #dd4b39;
+  color: white;
+      padding: 10px;
+    text-decoration: none;
+}
+
+/* Full-width input fields */
+.loginForm .modal-content .container input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: #E1E1E1
+}
+
+/* Set a style for all button*/
+.loginForm .modal-content .container button {
+        background-color: #000;
+    color: white;
+    padding: 11px 12px;
+    margin: 0px 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 21px;
+}
+
+.loginForm .modal-content .container button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+
+
+.container {
+    padding: 16px;
+}
+
+
+/* The Modal (background) */
+.modal {
+   
+   /* position: fixed*/; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color:#A4A4A4; /* Fallback color */
+    background-color: #A4A4A4; /* Black w/ opacity */
+    padding-top: 60px;
+    opacity: 0.9
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 13px;
+    height: 537px
+}
+
+
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+ 
+.chat-message .container img {
+        max-width: 34px;
+}
+
+
+}
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+     #mydiv{
+        top:20px;
+        left: 0;
+            right: 0;
+    }
+    #mydivheader {
+        font-size: 10px
+    }
+
+.chat-message .container img {
+        max-width: 34px;
+}
+.message-input form.example input[type=text]{
+      min-width: 72%;  
+}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+     #mydiv{
+        top:20px;
+        left: 0;
+    }
+    #mydivheader {
+        font-size: 10px
+    }
+    .modal {
+        padding-top: 20px
+    }
+    h6 {
+     margin-top: 2px;
+    margin-bottom: 2px;
+
+    }
+
+ 
+    #mydiv .container a{
+            display: block;
+         margin-top: 2px;
+              margin-right: 0px !important; 
+                  font-size: 14px;
+
+    }
+.chat-message .container{
+    padding: 3px;
+    margin: 0px 0;
+}
+.chat-message .container img {
+        max-width: 34px;
+}
+.scrollmenu-left a, .scrollmenu-right a{
+padding: 0px;
+font-size: 8px;
+}
+
+}
+
+
+

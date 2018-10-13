@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ChatRoom</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="big-container">
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" > &times; </a>
+  <!---Avatar===============================================-->
+  <a href="#"  class="user">
+		<div class="chip" >
+		    <img src="img/layer10.png" alt="Person"  style="width: 65px;height: 65px" >
+		      <div > 
+		      	<p class="name" >
+		      	John Doebr <br>   
+		        </p> 
+		        <p class="price" >Status : Available</p>
+		      </div>
+		   
+		</div>
+		<div class="users" >
+			<p style="color: #F1F6FE;margin-left: 34px;">(15)users</p>
+			<p style="color: #F1F6FE"><img src="icon/Icon_credits.png" alt="price"> 320 credits</p>
+		</div>
+	
+     </a>
+
+     <!-- Avatar================================== -->
+ <!-- SearchBar==================================== -->
+ <div class="avatar" >
+    
+  <form>
+    
+      <div class="inner" >
+         <div class="search" >
+            <span  class="search_icon"><i class="fa fa-search"></i></span>
+          </div>
+        <input type="text" class="" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1" >
+     <div class="comment" >
+            <span  ><i class="fa fa-commenting-o"></i></span>
+          </div>
+
+           <div class="dropdown" style="">
+            <span class="dropbtn" onclick="myFunction()"><i class="fa fa-ellipsis-v"></i></span>
+
+            <div class="dropdown-content" id="myAvatar">
+               <span class="triangle-up"></span>
+              <a href="#">My Account</a>
+              <a href="#">Change Avatar</a>
+            </div>
+          </div>
+         
+      </div>
+    
+  </form>
+</div>
+ 
+ <!-- ================================================== -->
+
+ <!-- Tabs====================================== -->
+ <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">Users</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">All Rooms</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Status</button>
+</div>
+
+<div id="London" class="tabcontent">
+	<!-- ================================================== -->
+
+     <!-- ==================================(1)============================= -->
+     <div class="ActiveUssers" >
+      <a href="#">
+		<div class="chip" >
+		    <img src="img/layer8.png" alt="Person" style="width:58px;height: 58px">
+		      <div>
+          
+       <div class="dropdown">
+
+  <button class="dropbtn" type="button">Admin</button>
+  <p>
+    <a href="">is active now</a>
+    <a href=""><img src="icon/microphone.png"></a>
+    <a href=""> <img src="icon/webcam (1).png"></a> 
+  </p>
+  <div class="dropdown-content">
+     <a href="#"><img src="icon/Layer 0.png">private Message</a>
+    <a href="#"><img src="icon/topcmm-123flashchat-light-color-panel-view-profile-icon.png">View Profile</a>
+    <a href="#"><img src="icon/block.png">Block</a>
+     <a href="#"><img src="icon/menu-icon.png">Chat Rules</a>
+      <a href="#"><img src="icon/menu-icon.png">Forums</a>
+  </div>
+</div>
+ </div>
+
+		</div>
+		<div class="users" >
+			<p>
+				<img src="icon/moderator-icon.png">
+				<img src="icon/gander-img-girl.png">
+			</p>
+			<p>Available</p>
+		</div>
+	
+     </a>
+
+     <!-- ===================================(3)============================ -->
+           <a href="#">
+    <div class="chip" >
+        <img src="img/layer8.png" alt="Person" style="width:58px;height: 58px">
+          <div>
+          
+       <div class="dropdown">
+
+  <button class="dropbtn" type="button">Admin</button>
+  <p>
+    <a href="">is active now</a>
+    <a href=""><img src="icon/microphone.png"></a>
+    <a href=""> <img src="icon/webcam (1).png"></a> 
+  </p>
+  <div class="dropdown-content">
+     <a href="#"><img src="icon/Layer 0.png">private Message</a>
+    <a href="#"><img src="icon/topcmm-123flashchat-light-color-panel-view-profile-icon.png">View Profile</a>
+    <a href="#"><img src="icon/block.png">Block</a>
+     <a href="#"><img src="icon/menu-icon.png">Chat Rules</a>
+      <a href="#"><img src="icon/menu-icon.png">Forums</a>
+  </div>
+</div>
+ </div>
+
+    </div>
+    <div class="users" >
+      <p>
+        <img src="icon/moderator-icon.png">
+        <img src="icon/gander-img-girl.png">
+      </p>
+      <p>Available</p>
+    </div>
+  
+     </a>
+       <!-- ==================================(4)=========================== -->
+     <a href="#">
+    <div class="chip" >
+        <img src="img/layer8.png" alt="Person" style="width:58px;height: 58px">
+          <div>
+          
+       <div class="dropdown">
+
+  <button class="dropbtn" type="button">Admin</button>
+  <p>
+    <a href="">is active now</a>
+    <a href=""><img src="icon/microphone.png"></a>
+    <a href=""> <img src="icon/webcam (1).png"></a> 
+  </p>
+  <div class="dropdown-content">
+     <a href="#"><img src="icon/Layer 0.png">private Message</a>
+    <a href="#"><img src="icon/topcmm-123flashchat-light-color-panel-view-profile-icon.png">View Profile</a>
+    <a href="#"><img src="icon/block.png">Block</a>
+     <a href="#"><img src="icon/menu-icon.png">Chat Rules</a>
+      <a href="#"><img src="icon/menu-icon.png">Forums</a>
+  </div>
+</div>
+ </div>
+
+    </div>
+    <div class="users" >
+      <p>
+        <img src="icon/moderator-icon.png">
+        <img src="icon/gander-img-girl.png">
+      </p>
+      <p>Available</p>
+    </div>
+  
+     </a>
+     <!-- =============================(5)========================= -->
+    
+         <a href="#">
+    <div class="chip" >
+        <img src="img/layer8.png" alt="Person" style="width:58px;height: 58px">
+          <div>
+          
+       <div class="dropdown">
+
+  <button class="dropbtn" type="button">Admin</button>
+  <p>
+    <a href="">is active now</a>
+    <a href=""><img src="icon/microphone.png"></a>
+    <a href=""> <img src="icon/webcam (1).png"></a> 
+  </p>
+  <div class="dropdown-content">
+     <a href="#"><img src="icon/Layer 0.png">private Message</a>
+    <a href="#"><img src="icon/topcmm-123flashchat-light-color-panel-view-profile-icon.png">View Profile</a>
+    <a href="#"><img src="icon/block.png">Block</a>
+     <a href="#"><img src="icon/menu-icon.png">Chat Rules</a>
+      <a href="#"><img src="icon/menu-icon.png">Forums</a>
+  </div>
+</div>
+ </div>
+
+    </div>
+    <div class="users" >
+      <p>
+        <img src="icon/moderator-icon.png">
+        <img src="icon/gander-img-girl.png">
+      </p>
+      <p>Available</p>
+    </div>
+  
+     </a>
+     <!-- ====================================================== -->
+      <!-- =============================(6)========================= -->
+    
+           <a href="#">
+    <div class="chip" >
+        <img src="img/layer8.png" alt="Person" style="width:58px;height: 58px">
+          <div>
+          
+       <div class="dropdown">
+
+  <button class="dropbtn" type="button">Admin</button>
+  <p>
+    <a href="">is active now</a>
+    <a href=""><img src="icon/microphone.png"></a>
+    <a href=""> <img src="icon/webcam (1).png"></a> 
+  </p>
+  <div class="dropdown-content">
+     <a href="#"><img src="icon/Layer 0.png">private Message</a>
+    <a href="#"><img src="icon/topcmm-123flashchat-light-color-panel-view-profile-icon.png">View Profile</a>
+    <a href="#"><img src="icon/block.png">Block</a>
+     <a href="#"><img src="icon/menu-icon.png">Chat Rules</a>
+      <a href="#"><img src="icon/menu-icon.png">Forums</a>
+  </div>
+</div>
+ </div>
+
+    </div>
+    <div class="users" >
+      <p>
+        <img src="icon/moderator-icon.png">
+        <img src="icon/gander-img-girl.png">
+      </p>
+      <p>Available</p>
+    </div>
+  
+     </a>
+     <!-- ====================================================== -->
+      <a href="#">
+    <div class="chip" >
+        <img src="img/layer8.png" alt="Person" style="width:58px;height: 58px">
+          <div>
+          
+       <div class="dropdown">
+
+  <button class="dropbtn" type="button">Admin</button>
+  <p>
+    <a href="">is active now</a>
+    <a href=""><img src="icon/microphone.png"></a>
+    <a href=""> <img src="icon/webcam (1).png"></a> 
+  </p>
+  <div class="dropdown-content">
+     <a href="#"><img src="icon/Layer 0.png">private Message</a>
+    <a href="#"><img src="icon/topcmm-123flashchat-light-color-panel-view-profile-icon.png">View Profile</a>
+    <a href="#"><img src="icon/block.png">Block</a>
+     <a href="#"><img src="icon/menu-icon.png">Chat Rules</a>
+      <a href="#"><img src="icon/menu-icon.png">Forums</a>
+  </div>
+</div>
+ </div>
+
+    </div>
+    <div class="users" >
+      <p>
+        <img src="icon/moderator-icon.png">
+        <img src="icon/gander-img-girl.png">
+      </p>
+      <p>Available</p>
+    </div>
+  
+     </a>
+     <!-- ====================================================== -->
+
+     <!-- =============================================================== -->
+ 
+     <!-- ========================================================= -->
+      </div>
+</div>
+
+<div id="Paris" class="tabcontent">
+	<!-- =========================(1)===================== -->
+   <div class="rooms" >
+   	 <div class="text-1" >
+   	 	<p>(15users)</p>
+   	 </div>
+   	  <div class="flag" >
+   	 	<img src="icon/Layer 18 (1).png">
+   	 </div>
+   	  <div class="text-2">
+   	 	<p>USA Chat</p>
+   	 </div>
+   </div>
+   <!-- =============================================== -->
+   <!-- =========================(2)===================== -->
+   <div class="rooms">
+   	 <div class="text-1" >
+   	 	<p>(3)users</p>
+   	 </div>
+   	  <div class="flag" >
+   	 	<img src="icon/Layer 19.png">
+   	 </div>
+   	  <div class="text-2" >
+   	 	<p>USA Chat</p>
+   	 </div>
+   </div>
+   <!-- ======================================================== -->
+      <!-- =========================(3)===================== -->
+   <div class="rooms" >
+   	 <div class="text-1" >
+   	 	<p>(10)users</p>
+   	 </div>
+   	  <div class="flag">
+   	 	<img src="icon/Layer 20.png">
+   	 </div>
+   	  <div class="text-2">
+   	 	<p>USA Chat</p>
+   	 </div>
+   </div>
+   <!-- ======================================================== -->
+      <!-- =========================(4)===================== -->
+   <div class="rooms" >
+   
+   	 <div class="text-1" >
+   	 	<p>(2)users</p>
+   	 </div>
+   	  <div class="flag" >
+   	 	<img src="icon/Layer 21.png">
+   	 </div>
+   	  <div class="text-2" >
+   	 	<p>USA Chat</p>
+   	 </div>
+   </div>
+   <!-- ======================================================== -->
+      <!-- =========================(5)===================== -->
+   <div class="rooms" >
+   	 <div class="text-1" >
+   	 	<p>(0)users</p>
+   	 </div>
+   	  <div class="flag" >
+   	 	<img src="icon/Layer 22.png">
+   	 </div>
+   	  <div class="text-2" >
+   	 	<p>USA Chat</p>
+   	 </div>
+   </div>
+   <!-- ======================================================== -->
+      <!-- =========================(6)===================== -->
+   <div class="rooms" >
+   	 <div class="text-1" >
+   	 	<p>(2)users</p>
+   	 </div>
+   	  <div class="flag" >
+   	 	<img src="icon/Layer 22.png">
+   	 </div>
+   	  <div class="text-2" >
+   	 	<p>USA Chat</p>
+   	 </div>
+   </div>
+   <!-- ======================================================== -->
+      <!-- =========================(7)===================== -->
+   <div class="rooms" >
+   	 <div class="text-1" >
+   	 	<p>(0)users</p>
+   	 </div>
+   	  <div class="flag" >
+   	 	<img src="icon/Layer 24.png">
+   	 </div>
+   	  <div class="text-2" >
+   	 	<p>USA Chat</p>
+   	 </div>
+   </div>
+   <!-- ======================================================== -->
+      <!-- =========================(8)===================== -->
+   <div class="rooms" >
+   	 <div class="text-1" >
+   	 	<p>(15users)</p>
+   	 </div>
+   	  <div class="flag" >
+   	 	<img src="icon/Layer 25.png">
+   	 </div>
+   	  <div class="text-2" >
+   	 	<p>USA Chat</p>
+   	 </div>
+   </div>
+   <!-- ======================================================== -->
+</div>
+
+
+<div id="Tokyo" class="tabcontent">
+  
+</div>
+<!-- ======================================================== -->
+
+    </div><!--mySidenav-->
+  
+
+
+<div id="main">
+ <div id="icon" style="color: #fff" > <span  onclick="openNav()">&#9776; </span></div>
+   <div class="messsage-body">
+ 	 <!-- message-body-navbar============================= -->
+ 	 <div class="topnav">
+		 <div class="topnav-left ">
+		 	 <a  href="#">
+		  	<p>You are Now Chatting in international room <br><small>10:47 PM (United State)</small></p>
+		  </a>
+		 </div>
+		  
+
+		  <div class="topnav-right topnav-right-icon">
+		    <a href="#"> <img src="icon/Android.png"></a>
+		    <a href="#"> <img src="icon/Apple store.png"></a>
+		    <a href="#"> <img src="icon/Webcam.png"></a>
+		    
+            <div class="dropdown">
+              <button class="dropbtn"><a href="#" style="border-right:none"><img src="icon/Settings.png"></a></button>
+              <div class="dropdown-content">
+                 <span class="triangle-up"></span>
+                    <a href="#"><img src="icon/logout-icon.png"> Logout</a>
+                     <a href="#"><img src="icon/setting-panel-option-icon.png"> Options</a>
+                      <a href="#"><img src="icon/topcmm-123flashchat-light-color-panel-ignore-icon.png"> Blocked User</a>
+                       <a href="#"><img src="icon/clear-screen-icon.png"> Clear Screen</a>
+                        <a href="#"><img src="icon/exit-room-icon.png"> Exit Room</a>
+              </div>
+          </div>
+		  </div>
+		</div>
+
+		<div class="chat-message">
+		 <!-- Chat Message====================== -->
+		
+
+<div class="container">
+  <img src="img/Layer 7.png" alt="Avatar" style="width:100%;">
+  <span class="time-right">11:00</span>
+  <p>Hello. How are you today?</p>
+  
+</div>
+
+<div class="container darker">
+  <img src="img/Layer 14.png" alt="Avatar" class="right" style="width:100%;">
+    <span class="time-left">11:01</span>
+  <p>Hey! I'm fine. Thanks for asking!</p>
+
+</div>
+
+<div class="container">
+  <img src="img/Layer 7.png" alt="Avatar" style="width:100%;">
+   <span class="time-right">11:02</span>
+  <p>Sweet! So, what do you wanna do today?</p>
+ 
+</div>
+<div class="container darker">
+  <img src="img/Layer 14.png" alt="Avatar" class="right" style="width:100%;">
+   <span class="time-left">11:01</span>
+  <p>Hey! I'm fine. Thanks for asking!</p>
+ 
+</div>
+
+<div class="container">
+  <img src="img/Layer 7.png" alt="Avatar" style="width:100%;">
+   <span class="time-right">11:02</span>
+  <p>Sweet! So, what do you wanna do today?</p>
+ 
+</div>
+
+<div class="container darker">
+  <img src="img/Layer 14.png" alt="Avatar" class="right" style="width:100%;">
+  <span class="time-left">11:01</span>
+  <p>Hey! I'm fine. Thanks for asking!</p>
+  
+</div>
+
+<div class="container">
+  <img src="img/Layer 7.png" alt="Avatar" style="width:100%;">
+  <span class="time-right">11:02</span>
+  <p>Sweet! So, what do you wanna do today?</p>
+  
+</div>
+
+
+
+<!-- ======================================= -->
+</div>
+<!---messageinput================================-->
+	<div class="message-input">
+      <div class="scrollmenu">
+  <div class="scrollmenu-left">
+    <a class="active" href="#"><i class="fa fa-bold" aria-hidden="true"></i></a>
+  <a href="#"><i><i class="fa fa-italic" aria-hidden="true"></i></i></a>
+  <a href="#"><i class="fa fa-underline" aria-hidden="true"></i></a>
+   <a href="#"><i class="fa fa-align-left" aria-hidden="true"></i></a>
+    <a href="#"><i class="fa fa-align-center" aria-hidden="true"></i></a>
+    <a href="#">Proxima Nova <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+  </div>
+
+  <div class="scrollmenu-right">
+   
+    <a href="#">YouTube Message <i class="fa fa-youtube fa-fg" aria-hidden="true"></i></a>
+    <a href="#">Insert Emoticon <i class="fa fa-smile-o fa-fw fa-fg" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+
+<form class="example" action="">
+  <input type="text" placeholder="Type your message here.." name="search">
+  <button type="submit">Send</button>
+</form>
+
+
+
+
+		</div>
+<!-- ================loginform============================= -->
+<div id="mydiv" class="loginForm">
+  <div id="mydivheader"><h3>Member Login<h3><p>
+    you can login with your Donamix account or enter as a Guest
+  </p></div>
+  <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="">
+    <div class="imgcontainer">
+      
+      
+    </div>
+
+    <div class="container">
+
+      <label ><span class="fa fa-user"></span></label>
+      <input type="text" placeholder="   Username" name="uname" required >
+        <label ><span class="fa fa-lock"></span></label>
+     
+      <input type="password" placeholder="   Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <div>
+       <h6 class="or"> or</h6>
+         <div class="col">
+        <a href="#" class="fb btn" >
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+         </a>
+        
+        <a href="#" class="google btn" 
+  ><i class="fa fa-google fa-fw">
+          </i> Login with Google+
+        </a>
+      </div>
+      </div>
+    </div>
+    <div style="">
+       <h6> Guest login</h6>
+      </div>
+
+    <div class="container" >
+      <label style="    position: absolute;
+    font-size: 25px;
+    margin-top: 15px;
+    color: #757575;
+    padding-left: 6px;"><span class="fa fa-user"></span></label>
+      <input type="text" placeholder="  Type your chat username" name="uname" required>
+      <button type="button"  class="cancelbtn">Enter as a Guest</button>
+       <span class="psw" style="float: left;"><a href="" style=" color: #807777;text-decoration: none;">Register your name</a></span>
+      <span class="psw" style="float: right;" ><a href="" style="color: #807777;text-decoration: none;">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+<!-- =================================================== -->
+ </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html> 
